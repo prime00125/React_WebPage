@@ -1,0 +1,119 @@
+@import '../Variables.scss';
+.card2{
+    background-color: $bodyColor;
+    display: flex;
+    justify-content: space-evenly;
+    .c2left{
+       @include CardBox;
+      
+    }
+
+    .c2right{
+        @include CardBox;
+        align-items: center;
+  
+        .black{
+            @include Blackbox;
+            right:70px;
+            margin-bottom: 10px;
+        }
+        
+       .C2MainImg{
+        @include CardBoxImg;
+        height: 250px;
+        width:70%;
+
+       }
+        .logo{
+            @include LogoBox;
+            bottom:60px;
+            left:120px;
+        }
+    }
+}
+
+.arrow{
+    background-color: $bodyColor;
+    display: flex;
+    justify-content: center;    
+    .arrowimg{
+        position:relative;
+        bottom:50px;
+        width:30%;
+        height: 200px;
+        left:0px;      
+    }
+    
+    
+}
+
+//Tabelt Screen
+@media Screen and (min-width:761px) and (max-width:1020px)
+{
+    .card2{
+        .c2left{
+            font-size: 12px;
+        }
+        .c2right{
+            align-items: center;
+            .black{
+                width:90px;
+                right:40px;
+                height: 30px;
+            }
+            
+           img{
+            width:200px;
+           }
+            .logo{
+                height:50px;
+                bottom:60px;
+                font-size: 10px;
+                right:100px;
+                
+            }
+
+        }
+    }
+}
+
+// Mobile Screen
+@media Screen and (max-width:760px)
+{
+    .card2{
+        flex-direction: column-reverse;
+        align-items: center;
+        .c2left{
+            width:90%;
+            font-size:11px ;
+        }
+        .c2right{
+            width:90%;
+            align-items: center;
+            .black{
+                width:90px;
+                top:30px;
+                right:100px;
+                height: 30px;
+            }
+            
+           img{
+            width:200px;
+           }
+            .logo{
+                height:50px;
+                bottom:50px;
+                font-size: 10px;
+                position: relative;
+                left:90px;
+            }
+
+        }
+    }
+    #mobstyle{
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+}

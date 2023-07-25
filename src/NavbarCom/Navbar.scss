@@ -1,0 +1,66 @@
+@import '../Variables.scss';
+
+
+// navbar
+
+.mobileNav{
+    display:none;
+}
+
+nav{
+    @include navbar;
+    
+
+    button{
+        height: 25px;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+    }
+    div{
+        width:25%;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    select{
+        background-color: $bgColor;
+        border-color:$bgColor;
+        color:white;
+    }
+
+}
+
+// TABLET SCREEN
+@media screen and (min-width:761px) and (max-width:1020px){
+    .mobileNav{
+        display:none;
+    }
+    nav{
+        font-size: 10px;
+    }
+}
+// MOBILE SCREEn
+@media screen and (max-width:760px){
+    .mobileNav{
+        display:block;
+        .na{
+            display: flex;
+            width:100%;
+        }
+        
+        button{
+            background-color: grey;
+            border-radius: 1px 10px;
+
+        }
+        // .list{
+        //     position: absolute;
+        //     background-color: red;
+        //     display:flex;
+        //     flex-direction: column;
+        // }
+    }
+    nav{
+      display:none;
+    }
+}

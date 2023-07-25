@@ -1,0 +1,80 @@
+.card4Main {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+#lastCard {
+  padding-bottom: 5%;
+}
+
+.subpart {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.subpart2 {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.C4card1 {
+  display: flex;
+  width: 30%;
+  height: 300px;
+  flex-direction: column;
+}
+.C4card1 img {
+  height: 200px;
+}
+.C4card1 .Imgheading {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  bottom: 70px;
+  left: 20px;
+}
+.C4card1 .para {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+}
+.C4card1 .para p {
+  position: relative;
+  font-size: small;
+  bottom: 10px;
+}
+.C4card1 .para hr {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 40px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  .C4card1 .Imgheading {
+    bottom: 50px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .subpart {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subpart2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .C4card1 {
+    width: 100%;
+  }
+  .C4card1 .Imgheading {
+    bottom: 50px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=Card4.css.map */

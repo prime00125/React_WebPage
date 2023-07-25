@@ -1,0 +1,87 @@
+@import '../Variables.scss';
+
+
+.Kheading{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    padding: 3% 0px;
+    hr{
+        width:5%;
+        border:2px solid black;
+    }
+}
+.Kimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    img{
+        width:30%;
+    }
+    p{
+        width:50%;
+        text-align: center;
+    }
+}
+.Kcard{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    div{
+        margin-left: 50px;
+        display: flex;
+        box-shadow: 4px 4px 10px 4px whitesmoke;
+        padding: 15px 15px;
+        flex-direction: column;
+        text-align: center;
+        width:17%;
+        border-radius: 10px 10px 10px 10px ;
+        margin-bottom: 20px;
+
+        button{
+            border:none;
+            border-radius:10px 10px 10px 10px;
+            background-color: black;
+            width:50px;
+            height: 25px;
+            color:white;
+
+        }
+    }
+}
+
+
+// Tablet Screen
+@media screen and (min-width:761px) and (max-width:1020px){
+    .Kcard{
+        div{
+            margin-left:10px;
+            width:25%;
+        }
+    }
+}
+
+// Mobile Screen
+@media screen and (max-width:760px){
+    .Kimg{
+        img{
+            width:70%;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .Kcard{
+        flex-direction: column;
+        align-items: center;
+        div{
+            margin-left:0px;
+            width:60%;
+            font-size: 13px;
+        }
+    }
+}

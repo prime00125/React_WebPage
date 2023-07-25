@@ -1,0 +1,15 @@
+@import '../Variables.scss';
+.BodyCardbody{
+    @include body-header;
+}
+//Mobile Screen
+@media screen and (max-width:760px)
+{
+    .BodyCardbody{
+        .section1{
+            font-size: 20px;
+        }
+        
+    }
+}
+

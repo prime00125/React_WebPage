@@ -1,0 +1,27 @@
+.MainPage {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 240px;
+}
+
+.Mainimg {
+  width: 100%;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  .MainPage {
+    bottom: 150px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .MainPage {
+    bottom: 70px;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=MainPage.css.map */

@@ -1,0 +1,70 @@
+.fotter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+}
+.fotter .part1 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.fotter .part1Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+.fotter .part2Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  align-items: center;
+}
+.fotter .part2Box div {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  position: relative;
+  bottom: 100px;
+  font-size: 25px;
+}
+.fotter .part2Box .icons {
+  margin-right: 30px;
+}
+.fotter .store {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  .part2Box div {
+    flex-direction: column;
+  }
+  .part2Box .icons {
+    position: relative;
+    top: 70px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .fotter .part1 {
+    flex-direction: column;
+  }
+  .fotter .part1 .part1Box {
+    width: 100%;
+    height: 200px;
+  }
+  .fotter .part1 .part2Box {
+    width: 100%;
+  }
+  .fotter .part1 .icons {
+    position: relative;
+    top: 90px;
+  }
+  .fotter .store {
+    width: 40%;
+  }
+}/*# sourceMappingURL=fotter.css.map */

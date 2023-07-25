@@ -1,0 +1,113 @@
+@import '../Variables.scss';
+.card1{
+    background-color: $bodyColor;
+    display: flex;
+    justify-content: space-evenly;
+    .c1left{
+       @include CardBox;
+       justify-content: center
+    }
+
+    .c1right{
+        @include CardBox;
+        align-items: center;
+        .black{
+            @include Blackbox;
+            top:30px;
+            right:100px;
+        }
+        
+       img{
+        @include CardBoxImg;
+       }
+        .logo{
+            @include LogoBox;
+            bottom:60px;
+            right:100px;
+        }
+    }
+}
+
+.arrow{
+    background-color: $bodyColor;
+    display: flex;
+    justify-content: center;
+    img{
+        position: relative;
+        bottom: 60px;
+        width:30%;
+        height: 150px;
+        right:40px;
+    }
+    
+}
+
+//Tabelt Screen
+@media Screen and (min-width:761px) and (max-width:1020px)
+{
+    .card1{
+        .c1left{
+            font-size: 12px;
+        }
+        .c1right{
+            align-items: center;
+            .black{
+                width:90px;
+                top:30px;
+                right:100px;
+                height: 30px;
+            }
+           img{
+            width:200px;
+           }
+            .logo{
+                height:50px;
+                bottom:60px;
+                font-size: 10px;
+                right:100px;
+            }
+
+        }
+    }
+ 
+}
+
+// Mobile Screen
+@media Screen and (max-width:760px)
+{
+    .card1{
+        flex-direction: column-reverse;
+        align-items: center;
+        .c1left{
+            width:90%;
+            font-size:11px ;
+        }
+        .c1right{
+            width:90%;
+            align-items: center;
+            .black{
+                width:90px;
+                top:30px;
+                right:100px;
+                height: 30px;
+            }
+            
+           img{
+            width:200px;
+           }
+            .logo{
+                height:50px;
+                bottom:50px;
+                font-size: 10px;
+                right:100px;
+            }
+
+        }
+    }
+    #mobstyle{
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+}

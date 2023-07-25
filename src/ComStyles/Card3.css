@@ -1,0 +1,112 @@
+.card1 {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card1 .c1left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card1 .c1right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1 .c1right .c3black {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+    left:50px;
+    
+    
+  }
+  .card1 .c1right img {
+    width: 60%;
+    border: 6px solid whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .card1 .c1right .logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    position: relative;
+    font-size: small;
+    font-weight: bold;
+    padding: 30px;
+    z-index: 2;
+    background-color: white;
+    border-radius: 13px 13px 13px 13px;
+    box-shadow: 4px 4px 4px whitesmoke;
+    bottom: 60px;
+    right: 100px;
+  }
+  .card1 .c1right .logo img {
+    background-color: #f9f9f9;
+    width: 50%;
+  }
+  
+
+  
+  @media Screen and (min-width: 761px) and (max-width: 1020px) {
+    .card1 .c1left {
+      font-size: 12px;
+    }
+    .card1 .c1right {
+      align-items: center;
+    }
+    .card1 .c1right .black {
+      width: 90px;
+      top: 30px;
+      right: 100px;
+      height: 30px;
+    }
+    .card1 .c1right img {
+      width: 200px;
+    }
+    .card1 .c1right .logo {
+      height: 50px;
+      bottom: 60px;
+      font-size: 10px;
+      right: 100px;
+    }
+  }
+  @media Screen and (max-width: 760px) {
+    .card1 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .card1 .c1left {
+      width: 90%;
+      font-size: 11px;
+    }
+    .card1 .c1right {
+      width: 90%;
+      align-items: center;
+    }
+    .card1 .c1right .black {
+      width: 90px;
+      top: 30px;
+      right: 100px;
+      height: 30px;
+    }
+    .card1 .c1right img {
+      width: 200px;
+    }
+    .card1 .c1right .logo {
+      height: 50px;
+      bottom: 50px;
+      font-size: 10px;
+      right: 100px;
+    }
+    #mobstyle {
+      flex-direction: column;
+    }
+
+  }/*# sourceMappingURL=Card.css.map */

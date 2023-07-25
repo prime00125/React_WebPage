@@ -1,0 +1,96 @@
+@import '../Variables.scss';
+
+.card4Main {
+    background-color: $bodyColor;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+ 
+}
+#lastCard{
+    padding-bottom: 5%;
+}
+
+.subpart {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.subpart2 {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.C4card1 {
+    display: flex;
+    width: 30%;
+    height: 300px;
+    flex-direction: column;
+    img {
+
+        height: 200px;
+    }
+
+    .Imgheading {
+        position: relative;
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .para {
+        position: relative;
+        bottom: 50px;
+        display: flex;
+
+        p {
+            position: relative;
+            font-size: small;
+            bottom: 10px;
+        }
+
+        hr {
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 40px;
+            border: 1px solid black;
+        }
+    }
+
+}
+
+// Tablet Screen
+
+@media screen and (min-width:761px) and (max-width:1020px) {
+    .C4card1 {
+        .Imgheading {
+            bottom:50px;
+            font-size: 15px;
+        }
+    }
+}
+
+// Mobile Screen
+@media screen and (max-width:760px){
+
+    .subpart{
+        flex-direction: column;
+        justify-content: center
+    }
+    
+    .subpart2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .C4card1 {
+        width:100%;
+        .Imgheading {
+            bottom:50px;
+            font-size: 15px;
+        }
+    }
+}

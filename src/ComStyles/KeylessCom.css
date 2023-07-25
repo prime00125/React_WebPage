@@ -1,0 +1,76 @@
+.Kheading {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: white;
+  padding: 3% 0px;
+}
+.Kheading hr {
+  width: 5%;
+  border: 2px solid black;
+}
+
+.Kimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.Kimg img {
+  width: 30%;
+}
+.Kimg p {
+  width: 50%;
+  text-align: center;
+}
+
+.Kcard {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.Kcard div {
+  margin-left: 50px;
+  display: flex;
+  box-shadow: 4px 4px 10px 4px whitesmoke;
+  padding: 15px 15px;
+  flex-direction: column;
+  text-align: center;
+  width: 17%;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+.Kcard div button {
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  background-color: black;
+  width: 50px;
+  height: 25px;
+  color: white;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  .Kcard div {
+    margin-left: 10px;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .Kimg img {
+    width: 70%;
+  }
+  .Kimg p {
+    font-size: 13px;
+  }
+  .Kcard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Kcard div {
+    margin-left: 0px;
+    width: 60%;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=KeylessCom.css.map */

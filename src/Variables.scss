@@ -1,0 +1,82 @@
+$textFont:15px;
+$bodyColor:#f9f9f9;
+
+$bgColor:black;
+@mixin navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    background-color: $bgColor;
+    padding:10px 0px;
+}
+@mixin footer{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    background-color: $bgColor;
+}
+@mixin mainpage(){
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom:240px;
+}
+@mixin Blackbox{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+}
+@mixin LogoBox{
+        img{    background-color: $bodyColor; 
+            width:50%;}
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width:20%;
+        position: relative;
+        font-size: small;
+        font-weight:bold;
+        padding:30px;
+        z-index: +2;
+        background-color: white;
+        border-radius: 13px 13px 13px 13px;
+        box-shadow: 4px 4px 4px whitesmoke;
+    
+}
+@mixin CardBox{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+}
+@mixin CardBoxImg{
+    width:60%;
+    border:6px solid whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+}
+@mixin body-header{
+   
+    .section1{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: $bodyColor;
+         
+        hr{
+            width:5%;
+            border:2px solid black;
+        }
+    
+    }
+}

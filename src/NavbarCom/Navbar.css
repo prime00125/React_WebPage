@@ -1,0 +1,53 @@
+.mobileNav {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  padding: 10px 0px;
+}
+nav button {
+  height: 25px;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+nav div {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav select {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  .mobileNav {
+    display: none;
+  }
+  nav {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mobileNav {
+    display: block;
+  }
+  .mobileNav .na {
+    display: flex;
+    width: 100%;
+  }
+  .mobileNav button {
+    background-color: grey;
+    border-radius: 1px 10px;
+  }
+  nav {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
